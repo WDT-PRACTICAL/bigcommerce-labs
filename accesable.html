@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accessible E-Commerce Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+     <section>   <h1> Shop For All </h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" aria-labelledby="home-heading">
+            <h2 id="home-heading">Welcome to Accessible Shop</h2>
+            <p>Your one-stop shop for all accessible products.</p>
+        </section>
+        <section id="products" aria-labelledby="products-heading">
+            <h2 id="products-heading">Our Products</h2>
+            <article class="product">
+                <h3>Product 1</h3>
+                <p>Description of Product 1. It is very useful and accessible.</p>
+                <p>Price: 500 Rs</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product">
+                <h3>Product 2</h3>
+                <p>Description of Product 2. It is very useful and accessible.</p>
+                <p>Price: 700 Rs</p>
+                <button>Add to Cart</button>
+            </article>
+        </section>
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Us</h2>
+            <p>We are committed to providing accessible products for everyone.</p>
+        </section>
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Accessible Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
